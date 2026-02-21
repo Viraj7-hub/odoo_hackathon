@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - FleetFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+<h1>FleetFlow Enterprise Login</h1>
+
+<div class="card" style="max-width:400px;margin:auto;">
+
+<input type="email" id="email" placeholder="Work Email">
+<input type="password" id="password" placeholder="Password">
+
+<select id="loginRole">
+<option value="">Login As</option>
+<option value="Fleet Manager">Fleet Manager</option>
+<option value="Dispatcher">Dispatcher</option>
+<option value="Safety Officer">Safety Officer</option>
+<option value="Financial Analyst">Financial Analyst</option>
+</select>
+
+<button class="btn" onclick="login()">Login</button>
+
+<p style="margin-top:10px;">
+<a href="#" onclick="forgotPassword()">Forgot Password?</a>
+</p>
+
+<p>New User? <a href="register.html">Register</a></p>
+
+</div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
