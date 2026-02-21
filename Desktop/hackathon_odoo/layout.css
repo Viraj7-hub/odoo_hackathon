@@ -1,0 +1,59 @@
+/* ===============================
+   LAYOUT SYSTEM
+   =============================== */
+
+.navbar {
+  height: 64px;
+  background: rgba(10, 14, 22, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0e1320, #070a12);
+  border-right: 1px solid var(--border-soft);
+  padding: 24px 16px;
+  position: fixed;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  transition: all 0.25s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(79, 156, 255, 0.12);
+  color: var(--text-primary);
+}
+
+.sidebar a.active {
+  background: linear-gradient(90deg, rgba(79,156,255,0.25), transparent);
+  color: var(--accent-blue);
+}
+
+.page {
+  margin-left: 240px;
+  padding: 32px;
+  min-height: calc(100vh - 64px);
+}

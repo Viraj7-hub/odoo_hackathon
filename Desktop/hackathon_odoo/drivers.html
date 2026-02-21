@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FleetFlow | Drivers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS (ORDER MATTERS) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+  <!-- AUTH GUARD -->
+  <script src="js/router.js"></script>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="vehicles.html">Vehicle Registry</a>
+    <a href="trips.html">Trip Dispatcher</a>
+    <a href="maintenance.html">Maintenance</a>
+    <a href="expenses.html">Expenses</a>
+    <a href="drivers.html" class="active">Drivers</a>
+    <a href="analytics.html">Analytics</a>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="page">
+    <h2>Driver Performance</h2>
+
+    <table id="driverTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Safety Score</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filled by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+  <script src="js/drivers.js"></script>
+
+</body>
+</html>

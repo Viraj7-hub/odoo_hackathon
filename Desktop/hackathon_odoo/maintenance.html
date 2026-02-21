@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FleetFlow | Maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+  <!-- AUTH GUARD -->
+  <script src="js/router.js"></script>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="vehicles.html">Vehicle Registry</a>
+    <a href="trips.html">Trip Dispatcher</a>
+    <a href="maintenance.html" class="active">Maintenance</a>
+    <a href="expenses.html">Expenses</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="analytics.html">Analytics</a>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="page">
+    <h2>Maintenance Logs</h2>
+
+    <form id="maintenanceForm" class="card">
+      <input id="vehicleId" placeholder="Vehicle ID" required>
+      <input id="issue" placeholder="Issue / Service Description" required>
+      <button class="btn btn-primary" type="submit">
+        Create Service
+      </button>
+    </form>
+
+    <table id="maintenanceTable">
+      <thead>
+        <tr>
+          <th>Vehicle</th>
+          <th>Issue</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filled by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+  <script src="js/maintenance.js"></script>
+
+</body>
+</html>

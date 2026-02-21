@@ -1,0 +1,54 @@
+/* ===============================
+   BASE RESET & VARIABLES
+   =============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-main: #0b0e13;
+  --bg-panel: #121620;
+  --bg-card: #171c28;
+
+  --text-primary: #ffffff;
+  --text-secondary: #9aa4bf;
+  --text-muted: #6f7895;
+
+  --accent-blue: #4f9cff;
+  --accent-green: #22ffd2;
+  --accent-orange: #ff9f43;
+  --accent-red: #ff5c5c;
+
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --glow-blue: rgba(79, 156, 255, 0.35);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #111827, #05070c);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

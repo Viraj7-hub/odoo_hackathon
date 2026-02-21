@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FleetFlow | Trip Dispatcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+  <!-- AUTH GUARD -->
+  <script src="js/router.js"></script>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="vehicles.html">Vehicle Registry</a>
+    <a href="trips.html" class="active">Trip Dispatcher</a>
+    <a href="maintenance.html">Maintenance</a>
+    <a href="expenses.html">Expenses</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="analytics.html">Analytics</a>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="page">
+    <h2>Trip Dispatcher</h2>
+
+    <form id="tripForm" class="card">
+      <input id="vehicle" placeholder="Vehicle ID" required>
+      <input id="cargo" type="number" placeholder="Cargo Weight (kg)" required>
+      <input id="origin" placeholder="Origin" required>
+      <input id="destination" placeholder="Destination" required>
+
+      <button class="btn btn-primary" type="submit">
+        Dispatch Trip
+      </button>
+    </form>
+
+    <table id="tripTable">
+      <thead>
+        <tr>
+          <th>Vehicle</th>
+          <th>Cargo</th>
+          <th>Route</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filled by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+  <script src="js/trips.js"></script>
+
+</body>
+</html>
